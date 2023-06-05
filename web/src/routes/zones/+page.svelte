@@ -9,17 +9,17 @@
 
 <Subheader title="Zones">
 	<button
-		class="flex gap-1 hover:bg-slate-600 rounded-lg p-2"
+		class="flex gap-1 hover:bg-slate-600 rounded-lg p-2 place-items-center"
 		slot="buttons"
 		on:click={() => (adding = true)}
 	>
-		<PlusIcon size="24" />
+		<PlusIcon size="18" />
 		<span>New Zone</span>
 	</button>
 </Subheader>
 
 {#if adding}
-	<Modal title="New Zone" on:close={() => (adding = false)}>
+	<Modal titleIcon={PlusIcon} title="New Zone" on:close={() => (adding = false)}>
 		<section>
 			<form>
 				<div class="p-4">
