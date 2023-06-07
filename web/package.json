@@ -1,8 +1,9 @@
 {
-	"name": "sprinkler-controller",
+	"name": "sprinkler-web",
 	"version": "0.0.1",
 	"private": true,
 	"scripts": {
+		"start:dev": "vite dev",
 		"dev": "vite dev",
 		"build": "vite build",
 		"preview": "vite preview",
